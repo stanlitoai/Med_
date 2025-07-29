@@ -58,7 +58,7 @@ def input_image_setup(uploaded_image):
 
 # Initialize Streamlit app
 st.set_page_config(page_title="Med Assistance App",
-                   page_icon=":art:",
+                   page_icon="💊",
                    layout="centered",
                    initial_sidebar_state="auto")
 
