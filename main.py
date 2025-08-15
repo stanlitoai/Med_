@@ -163,21 +163,24 @@ submit_button = st.button("Describe the Product")
 # Predefined prompt
 input_prompt = """
     Welcome to Drug Information Extraction Task.
+    
+    Your expertise is required to identify a drug and extract concise, clinically accurate details.
+    
+    Task: For a given drug, produce a compact authoritative summary (≤150 words) with short headers (1–2 lines each). Be clinical, precise, and suitable for healthcare professionals.
+    
+    Required headings:
+    • Drug name (generic ± common brand)
+    • Active ingredient(s)
+    • Indications / therapeutic use
+    • Typical dose & route
+    • Common side effects
+    • Serious / rare adverse effects
+    • Contraindications & key precautions
+    • Major drug interactions / monitoring
+    
+    Accuracy: Prioritize reliable, unambiguous language. Keep entries brief, fact-focused, and ready for professional use.
+"""
 
-    Your task is to provide comprehensive information about any drug.
-    
-    Your expertise is crucial in accurately identifying the drug and extracting key details, such as its composition, 
-    usage, side effects, and precautions.
-    
-    Your tasks is :
-     Provide details about the drug's name, active ingredients, therapeutic uses, potential side effects, 
-     and contraindications. Offer detailed explanations or summaries for each aspect.
-    
-    Ensure accuracy and precision in your information retrieval process to provide reliable insights to users.
-    
-    Your goal is to create a comprehensive summary covering all essential aspects of the drug.
-    
-   """
 
 # Handle button click event
 if submit_button:
